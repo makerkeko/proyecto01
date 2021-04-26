@@ -396,46 +396,11 @@
         "y": 160,
         "wires": [
             [
-                "beab5144.de328",
                 "e582a8cb.4733c8",
                 "9a09839.c6db78",
                 "f05fa544.94a118"
             ]
         ]
-    },
-    {
-        "id": "3142b28f.c8529e",
-        "type": "debug",
-        "z": "1f4bc2fe.f615dd",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 610,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "beab5144.de328",
-        "type": "debug",
-        "z": "1f4bc2fe.f615dd",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 230,
-        "y": 60,
-        "wires": []
     },
     {
         "id": "e582a8cb.4733c8",
@@ -455,7 +420,6 @@
         "y": 160,
         "wires": [
             [
-                "3142b28f.c8529e",
                 "c56b4c75.e7c93"
             ]
         ]
@@ -532,8 +496,7 @@
         "y": 240,
         "wires": [
             [
-                "25423380.b3f9ac",
-                "a1010148.0d3c7"
+                "25423380.b3f9ac"
             ]
         ]
     },
@@ -557,22 +520,5 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "a1010148.0d3c7",
-        "type": "debug",
-        "z": "1f4bc2fe.f615dd",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 620,
-        "y": 380,
-        "wires": []
     }
 ]
