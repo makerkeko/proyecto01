@@ -21,6 +21,13 @@
         "info": ""
     },
     {
+        "id": "81a52bfc.a267b8",
+        "type": "tab",
+        "label": "captura de pantalla",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "d6237f20.585b3",
         "type": "mqtt-broker",
         "name": "",
@@ -520,5 +527,71 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "98f66c9f.e8c5c",
+        "type": "inject",
+        "z": "81a52bfc.a267b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "4c751894.1f93b8"
+            ]
+        ]
+    },
+    {
+        "id": "4c751894.1f93b8",
+        "type": "http request",
+        "z": "81a52bfc.a267b8",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "http://www.navarra.es/Templates/Navarra/Especificas/CamarasTrafico/CamaraTraficoHandler.ashx?Img=carreteras\\ARETA_PA_30_5_700.JPG&random=665858392",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "8277020f.f6d1e"
+            ]
+        ]
+    },
+    {
+        "id": "8277020f.f6d1e",
+        "type": "image",
+        "z": "81a52bfc.a267b8",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 520,
+        "y": 160,
+        "wires": []
     }
 ]
