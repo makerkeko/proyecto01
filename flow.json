@@ -532,7 +532,8 @@
         "y": 240,
         "wires": [
             [
-                "25423380.b3f9ac"
+                "25423380.b3f9ac",
+                "a1010148.0d3c7"
             ]
         ]
     },
@@ -556,5 +557,22 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "a1010148.0d3c7",
+        "type": "debug",
+        "z": "1f4bc2fe.f615dd",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 380,
+        "wires": []
     }
 ]
