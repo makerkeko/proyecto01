@@ -28,6 +28,13 @@
         "info": ""
     },
     {
+        "id": "496f987.898cd68",
+        "type": "tab",
+        "label": "dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "d6237f20.585b3",
         "type": "mqtt-broker",
         "name": "",
@@ -102,6 +109,176 @@
         "willPayload": "",
         "willMsg": {},
         "sessionExpiry": ""
+    },
+    {
+        "id": "740a27bf.c98c38",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "8e6ff268.90f1d",
+        "type": "ui_tab",
+        "d": true,
+        "name": "Trafico",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "57ec385f.29a098",
+        "type": "ui_group",
+        "name": "Navarra",
+        "tab": "8e6ff268.90f1d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b4d0e075.2b07f",
+        "type": "ui_tab",
+        "name": "Tab 2",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "bcaec1c9.fb9fb",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "8e6ff268.90f1d",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "d45f6dd0.d00da",
+        "type": "ui_tab",
+        "name": "Casa",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f60d4690.7f8558",
+        "type": "ui_group",
+        "name": "Consumo",
+        "tab": "d45f6dd0.d00da",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "81d66982.a7bd68",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "f60d4690.7f8558",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d1be0de9.1f684",
+        "type": "ui_group",
+        "name": "Estadistica",
+        "tab": "d45f6dd0.d00da",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
     },
     {
         "id": "f2438b48.129038",
@@ -382,7 +559,7 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "d6237f20.585b3",
+        "broker": "61d1b129.0ab9a",
         "x": 510,
         "y": 440,
         "wires": []
@@ -391,7 +568,7 @@
         "id": "3e3fd07f.3dfb2",
         "type": "mqtt in",
         "z": "1f4bc2fe.f615dd",
-        "name": "Temperatura M5stick",
+        "name": "Temperatura M5 stick",
         "topic": "aprendiendonodered21/enrique/m5stick/enrique/temperatura",
         "qos": "0",
         "datatype": "auto",
@@ -399,7 +576,7 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 90,
+        "x": 100,
         "y": 160,
         "wires": [
             [
@@ -420,7 +597,7 @@
         "outputField": "payload",
         "inputFieldType": "msg",
         "outputFieldType": "msg",
-        "roundOutputField": false,
+        "roundOutputField": true,
         "outputFieldDecimals": 2,
         "name": "conversor de temperatura",
         "x": 390,
@@ -444,7 +621,7 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "61d1b129.0ab9a",
+        "broker": "d6237f20.585b3",
         "x": 440,
         "y": 60,
         "wires": []
@@ -462,7 +639,7 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "61d1b129.0ab9a",
+        "broker": "d6237f20.585b3",
         "x": 650,
         "y": 160,
         "wires": []
@@ -480,7 +657,7 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "61d1b129.0ab9a",
+        "broker": "d6237f20.585b3",
         "x": 630,
         "y": 240,
         "wires": []
@@ -496,7 +673,7 @@
         "outputField": "payload",
         "inputFieldType": "msg",
         "outputFieldType": "msg",
-        "roundOutputField": false,
+        "roundOutputField": true,
         "outputFieldDecimals": 2,
         "name": "conversor de temperatura K",
         "x": 380,
@@ -549,8 +726,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
-        "y": 160,
+        "x": 140,
+        "y": 100,
         "wires": [
             [
                 "4c751894.1f93b8"
@@ -593,5 +770,257 @@
         "x": 520,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "462e9463.f6ed9c",
+        "type": "ui_button",
+        "z": "81a52bfc.a267b8",
+        "name": "",
+        "group": "57ec385f.29a098",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 240,
+        "wires": [
+            [
+                "4c751894.1f93b8"
+            ]
+        ]
+    },
+    {
+        "id": "7b8de762.801898",
+        "type": "inject",
+        "z": "496f987.898cd68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "cfa39072.26f05"
+            ]
+        ]
+    },
+    {
+        "id": "cfa39072.26f05",
+        "type": "http request",
+        "z": "496f987.898cd68",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "http://www.navarra.es/Templates/Navarra/Especificas/CamarasTrafico/CamaraTraficoHandler.ashx?Img=carreteras\\ARETA_PA_30_5_700.JPG&random=665858392",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "ef32c8b6.4a9838",
+                "e4e426af.beeaa8"
+            ]
+        ]
+    },
+    {
+        "id": "ef32c8b6.4a9838",
+        "type": "image",
+        "z": "496f987.898cd68",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "5c0750f9.d0294",
+        "type": "ui_button",
+        "z": "496f987.898cd68",
+        "name": "",
+        "group": "57ec385f.29a098",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 220,
+        "wires": [
+            [
+                "cfa39072.26f05"
+            ]
+        ]
+    },
+    {
+        "id": "e4e426af.beeaa8",
+        "type": "ui_media",
+        "z": "496f987.898cd68",
+        "group": "57ec385f.29a098",
+        "name": "",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "",
+        "file": "",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 510,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea7c4be6.0077e8",
+        "type": "mqtt in",
+        "z": "496f987.898cd68",
+        "name": "intensidad",
+        "topic": "aprendiendonodered21/enrique/wibeee/irms1",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "d6237f20.585b3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 100,
+        "y": 340,
+        "wires": [
+            [
+                "41be6f90.c3419",
+                "7d0963ea.b19dfc"
+            ]
+        ]
+    },
+    {
+        "id": "41be6f90.c3419",
+        "type": "ui_gauge",
+        "z": "496f987.898cd68",
+        "name": "",
+        "group": "f60d4690.7f8558",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "Amperios",
+        "format": "{{value | number:1}}%",
+        "min": 0,
+        "max": "4.5",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "2",
+        "seg2": "3",
+        "x": 490,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "30bb1cc9.c3c8e4",
+        "type": "mqtt in",
+        "z": "496f987.898cd68",
+        "name": "intensidad",
+        "topic": "aprendiendonodered21/enrique/wibeee/irms1",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "d6237f20.585b3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 140,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d0963ea.b19dfc",
+        "type": "ui_chart",
+        "z": "496f987.898cd68",
+        "name": "",
+        "group": "d1be0de9.1f684",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 470,
+        "y": 380,
+        "wires": [
+            []
+        ]
     }
 ]
