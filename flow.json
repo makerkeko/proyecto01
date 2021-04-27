@@ -1,6 +1,6 @@
 [
     {
-        "id": "496f987.898cd68",
+        "id": "ba939d69.9b294",
         "type": "tab",
         "label": "dashboard",
         "disabled": false,
@@ -253,9 +253,19 @@
         "collapse": false
     },
     {
-        "id": "ea7c4be6.0077e8",
+        "id": "28bbf643.f771ba",
+        "type": "ui_group",
+        "name": "Voltaje",
+        "tab": "d45f6dd0.d00da",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "320e9941.1b6846",
         "type": "mqtt in",
-        "z": "496f987.898cd68",
+        "z": "ba939d69.9b294",
         "name": "intensidad",
         "topic": "aprendiendonodered21/enrique/wibeee/irms1",
         "qos": "0",
@@ -265,18 +275,18 @@
         "rap": true,
         "rh": 0,
         "x": 100,
-        "y": 340,
+        "y": 100,
         "wires": [
             [
-                "41be6f90.c3419",
-                "7d0963ea.b19dfc"
+                "d8f20984.b5e598",
+                "e12fb89d.103368"
             ]
         ]
     },
     {
-        "id": "41be6f90.c3419",
+        "id": "d8f20984.b5e598",
         "type": "ui_gauge",
-        "z": "496f987.898cd68",
+        "z": "ba939d69.9b294",
         "name": "",
         "group": "f60d4690.7f8558",
         "order": 1,
@@ -295,32 +305,34 @@
         ],
         "seg1": "2",
         "seg2": "3",
-        "x": 490,
-        "y": 320,
+        "x": 470,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "30bb1cc9.c3c8e4",
+        "id": "77a5573b.3bc008",
         "type": "mqtt in",
-        "z": "496f987.898cd68",
-        "name": "intensidad",
-        "topic": "aprendiendonodered21/enrique/wibeee/irms1",
+        "z": "ba939d69.9b294",
+        "name": "voltaje",
+        "topic": "aprendiendonodered21/enrique/wibeee/vrms1",
         "qos": "0",
         "datatype": "auto",
         "broker": "d6237f20.585b3",
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 140,
-        "y": 440,
+        "x": 110,
+        "y": 200,
         "wires": [
-            []
+            [
+                "88d7263d.322e98"
+            ]
         ]
     },
     {
-        "id": "7d0963ea.b19dfc",
+        "id": "e12fb89d.103368",
         "type": "ui_chart",
-        "z": "496f987.898cd68",
+        "z": "ba939d69.9b294",
         "name": "",
         "group": "d1be0de9.1f684",
         "order": 3,
@@ -354,10 +366,26 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 470,
-        "y": 380,
+        "x": 450,
+        "y": 140,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "88d7263d.322e98",
+        "type": "ui_text",
+        "z": "ba939d69.9b294",
+        "group": "28bbf643.f771ba",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Tension",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 390,
+        "y": 220,
+        "wires": []
     }
 ]
